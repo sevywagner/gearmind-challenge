@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sevywagner.github.io/gearmind-challenge/static/css/main.3729426f.css",
+    "main.js": "/sevywagner.github.io/gearmind-challenge/static/js/main.9657754c.js",
+    "index.html": "/sevywagner.github.io/gearmind-challenge/index.html",
+    "main.3729426f.css.map": "/sevywagner.github.io/gearmind-challenge/static/css/main.3729426f.css.map",
+    "main.9657754c.js.map": "/sevywagner.github.io/gearmind-challenge/static/js/main.9657754c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3729426f.css",
+    "static/js/main.9657754c.js"
+  ]
+}
