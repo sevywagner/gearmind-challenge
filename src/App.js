@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import AddMemberForm from "./components/AddMemberForm";
+import { useState } from "react";
+import Member from "./components/Member";
 
 function App() {
+  const [members, setMembers] = useState([]);
+  const [shortNames, setShortNames] = useState([]);
+
+  const addMemberHandler = (name) => {
+    setMembers((prevState) => [name, ...prevState]);
+  };
+
+  const addShortNameHandler = (name) => {
+    setShortNames((prevState) => [name, ...prevState]);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello</h1>
+      <AddMemberForm
+        members={members}
+        onAddShort={addShortNameHandler}
+        onAdd={addMemberHandler}
+        shortNames={shortNames}
+      />
+      <div className="members">
+        <div className="member-wrapper">
+          <div className="title">
+            <p>In the call</p>
+          </div>
+        </div>
+        {shortNames.map((member) => (
+          <Member key={Math.random()} name={member} />
+        ))}
+      </div>
     </div>
   );
 }
