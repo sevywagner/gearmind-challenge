@@ -1,7 +1,7 @@
 {
   "name": "challenge",
   "version": "0.1.0",
-  "homepage": "sevywagner.github.io/gearmind-challenge",
+  "homepage": "https://sevywagner.github.io/gearmind-challenge/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
